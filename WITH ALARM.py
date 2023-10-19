@@ -21,15 +21,15 @@ def play_alarm_sound_function():
     print("Fire alarm end")
 
 def send_mail_function():  
-    recipientmail = "nikhilballari1234@gmail.com"  
+    recipientmail = "abc@gmail.com"  
     recipientmail = recipientmail.lower()  
 
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login("isha092004@gmail.com", 'mqqm rhrm qxks xeap')  
-        server.sendmail('isha092004@gmail.com', recipientmail, "Warning fire accident has been reported")  
+        server.login("xyz@gmail.com", 'mqqm rhrm qxks xeap')  
+        server.sendmail('xyz@gmail.com', recipientmail, "Warning fire accident has been reported")  
         print("Alert mail sent successfully to {}".format(recipientmail))  
         server.close()  
 
